@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E28D92C720BF8B4500A51840 /* OutlineViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = E28D92C620BF8B4500A51840 /* OutlineViewData.m */; };
+		E28D92CA20BF8B7100A51840 /* SimpleNodeData.m in Sources */ = {isa = PBXBuildFile; fileRef = E28D92C920BF8B7100A51840 /* SimpleNodeData.m */; };
+		E28D92CD20BF8BB500A51840 /* CenterTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E28D92CC20BF8BB500A51840 /* CenterTextFieldCell.m */; };
 		E2BCC18D20BE6BFA001F5819 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCC18C20BE6BFA001F5819 /* AppDelegate.m */; };
 		E2BCC19020BE6BFA001F5819 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCC18F20BE6BFA001F5819 /* ViewController.m */; };
 		E2BCC19220BE6BFB001F5819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2BCC19120BE6BFB001F5819 /* Assets.xcassets */; };
@@ -15,6 +18,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E28D92C520BF8B4500A51840 /* OutlineViewData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutlineViewData.h; sourceTree = "<group>"; };
+		E28D92C620BF8B4500A51840 /* OutlineViewData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutlineViewData.m; sourceTree = "<group>"; };
+		E28D92C820BF8B7100A51840 /* SimpleNodeData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleNodeData.h; sourceTree = "<group>"; };
+		E28D92C920BF8B7100A51840 /* SimpleNodeData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleNodeData.m; sourceTree = "<group>"; };
+		E28D92CB20BF8BB500A51840 /* CenterTextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CenterTextFieldCell.h; sourceTree = "<group>"; };
+		E28D92CC20BF8BB500A51840 /* CenterTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CenterTextFieldCell.m; sourceTree = "<group>"; };
 		E2BCC18820BE6BF9001F5819 /* PlistEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlistEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BCC18B20BE6BFA001F5819 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E2BCC18C20BE6BFA001F5819 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -38,6 +47,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E28D92C420BF8B2700A51840 /* Outline View */ = {
+			isa = PBXGroup;
+			children = (
+				E28D92C520BF8B4500A51840 /* OutlineViewData.h */,
+				E28D92C620BF8B4500A51840 /* OutlineViewData.m */,
+				E28D92C820BF8B7100A51840 /* SimpleNodeData.h */,
+				E28D92C920BF8B7100A51840 /* SimpleNodeData.m */,
+				E28D92CB20BF8BB500A51840 /* CenterTextFieldCell.h */,
+				E28D92CC20BF8BB500A51840 /* CenterTextFieldCell.m */,
+			);
+			path = "Outline View";
+			sourceTree = "<group>";
+		};
 		E2BCC17F20BE6BF9001F5819 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +83,7 @@
 				E2BCC18C20BE6BFA001F5819 /* AppDelegate.m */,
 				E2BCC18E20BE6BFA001F5819 /* ViewController.h */,
 				E2BCC18F20BE6BFA001F5819 /* ViewController.m */,
+				E28D92C420BF8B2700A51840 /* Outline View */,
 				E2BCC19120BE6BFB001F5819 /* Assets.xcassets */,
 				E2BCC19320BE6BFB001F5819 /* Main.storyboard */,
 				E2BCC19620BE6BFB001F5819 /* Info.plist */,
@@ -101,6 +124,11 @@
 				TargetAttributes = {
 					E2BCC18720BE6BF9001F5819 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -140,8 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2BCC19020BE6BFA001F5819 /* ViewController.m in Sources */,
+				E28D92C720BF8B4500A51840 /* OutlineViewData.m in Sources */,
+				E28D92CD20BF8BB500A51840 /* CenterTextFieldCell.m in Sources */,
 				E2BCC19820BE6BFB001F5819 /* main.m in Sources */,
 				E2BCC18D20BE6BFA001F5819 /* AppDelegate.m in Sources */,
+				E28D92CA20BF8B7100A51840 /* SimpleNodeData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +303,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = PlistEditor/PlistEditor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8LP5KW6GHL;
@@ -290,7 +320,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = PlistEditor/PlistEditor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8LP5KW6GHL;
